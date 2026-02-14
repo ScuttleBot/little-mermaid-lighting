@@ -113,6 +113,23 @@
             display: block;
         }
         
+        .image-item img[src*="scenicandlighting.com"] {
+            background: rgba(0, 0, 0, 0.2);
+        }
+        
+        .image-fallback {
+            width: 100%;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.3);
+            color: #a8dadc;
+            font-size: 0.9em;
+            text-align: center;
+            padding: 20px;
+        }
+        
         .image-caption {
             padding: 15px;
             font-size: 0.9em;
@@ -366,12 +383,16 @@
             
             <div class="image-grid">
                 <div class="image-item">
-                    <img src="https://scenicandlighting.com/wp-content/uploads/2019/04/A7R03590.jpg" alt="Underwater Scene 1">
+                    <a href="https://scenicandlighting.com/wp-content/uploads/2019/04/A7R03590.jpg" target="_blank" rel="noopener">
+                        <img src="https://scenicandlighting.com/wp-content/uploads/2019/04/A7R03590.jpg" alt="Underwater Scene 1" crossorigin="anonymous" onerror="this.parentElement.innerHTML='<div class=\'image-fallback\'>Image available at:<br><a href=\'https://scenicandlighting.com/portfolio_show/disneys-the-little-mermaid-2/\' target=\'_blank\' style=\'color:#f1fa8c\'>Matt Kizer Design</a></div>'">
+                    </a>
                     <div class="image-caption">Blue/teal backlighting with warm front light pulling actors forward</div>
                 </div>
                 
                 <div class="image-item">
-                    <img src="https://scenicandlighting.com/wp-content/uploads/2019/04/A7R03652.jpg" alt="Grotto Scene">
+                    <a href="https://scenicandlighting.com/wp-content/uploads/2019/04/A7R03652.jpg" target="_blank" rel="noopener">
+                        <img src="https://scenicandlighting.com/wp-content/uploads/2019/04/A7R03652.jpg" alt="Grotto Scene" crossorigin="anonymous" onerror="this.parentElement.innerHTML='<div class=\'image-fallback\'>Image available at:<br><a href=\'https://scenicandlighting.com/portfolio_show/disneys-the-little-mermaid-2/\' target=\'_blank\' style=\'color:#f1fa8c\'>Matt Kizer Design</a></div>'">
+                    </a>
                     <div class="image-caption">Ariel's Grotto - lighter blues with projection on cyc</div>
                 </div>
                 
